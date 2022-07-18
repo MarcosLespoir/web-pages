@@ -1,0 +1,16 @@
+{
+  "name": "web-pages",
+  "version": "1.0.0",
+  "description": "Repositorio de paginas web",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Juan <marcos.lespoir@gmail.com>",
+  "license": "MIT"
+}

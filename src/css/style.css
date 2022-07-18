@@ -1,0 +1,66 @@
+:root {
+    --color-first: #F5C2C1;
+    --color-second: #E3D2FA;
+    --color-thirdt: #D0D5F2;
+    --color-fourth: #F5EDE9;
+    --color-fifth: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 95%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: var(--color-fifth);
+}
+
+header{
+    padding: 0.5rem;
+    background-color: var(--color-first);
+    
+    position: sticky;
+    top: 0;
+    
+    display: flex;
+}
+
+#logo.header{
+    margin: auto;
+    width: 2rem;
+}
+
+main {
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--color-fourth);
+}
+
+#card.page {
+    width: 10rem;
+    padding: .5rem;
+    
+    border-radius: 1rem;
+    background-color: var(--color-thirdt);
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+#card img {
+    width: 115%;
+}
+#card h3{
+    text-align: center;
+}
+
+footer{
+    height: 5rem;
+    background-color: var(--color-first);
+}
+
+
