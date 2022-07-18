@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "desploy": "gh-pages -d src",
-
     "tree": "git log --all --graph --decorate --oneline"
   },
   "keywords": [
