@@ -12,5 +12,8 @@
     "javascript"
   ],
   "author": "Juan <marcos.lespoir@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
