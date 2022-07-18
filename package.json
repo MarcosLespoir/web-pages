@@ -4,7 +4,8 @@
   "description": "Repositorio de paginas web",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tree": "git log --all --graph --decorate --oneline"
   },
   "keywords": [
     "html",
