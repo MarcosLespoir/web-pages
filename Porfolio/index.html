@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+        </nav>
+        <nav class="nav-page">
+            <ul>
+                <li><a href=""> Inicio </a></li>
+                <li><a href=""> Tracks </a></li>
+                <li><a href=""> Eventos </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Portada -->
+        <section class="inicio">
+            <div class="portada">
+                <img src="https://img.freepik.com/foto-gratis/foto-escala-grises-hombre-guitarra-biblia-abierta_181624-46467.jpg?w=2000"
+                    alt="">
+            </div>
+            <div class="ficha">
+                <h1 class="nombre">Artista</h1>
+                <h3 class="actividad">músico / cover</h3>
+            </div>
+        </section>
+
+        <section class="tracks">
+            <div class="pistas">
+                <audio id="player" src="./Tiempos_de_Exito.ogg" preload="auto"></audio>
+                <div class="panel-control">
+                    <button class="play">►</button>
+                    <input type="range" class="currentTime" min="0" max="100" value="0">
+                    <input type="range" class="volume" min="0" max="100" value="66">                </div>
+            </div>
+        </section>
+
+        <section class="eventos">
+
+        </section>
+
+        <!-- Scripts-->
+        <script src="./controls.js"></script>
+    </main>
+
+</body>
+
+</html>
