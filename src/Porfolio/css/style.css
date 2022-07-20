@@ -90,12 +90,32 @@ nav a {
     display: flex;
 }
 
-audio {
+.pistas {
     width: 50vw;
     max-width: 600px;
     min-width: 100%;
 }
+.button-control .play {
+    width: 3rem;
+}
+.panel-control .currentTime {
+    max-width: 5rem;
+    min-width: 50%;
+    
+}
+.panel-control .volume {
+    min-width: 0px;
+    width: auto;
+    max-width: 5rem;
+}
+.panel-control button {
+    padding: 0 1rem;
 
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    background-color: yellowgreen;
+}
 
 
 
