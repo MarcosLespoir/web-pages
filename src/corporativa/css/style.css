@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+section {
+    margin: 30px auto;
+}
+
+#inicio {
+    width: 10rem;
+    height: 100vh;
+    background-color: darkblue;
+}
+
+#about {
+    width: 10rem;
+    height: 100vh;
+    background-color: darkred;
+}
+
+#question {
+    width: 10rem;
+    height: 100vh;
+    background-color: darkolivegreen;
+}

@@ -15,5 +15,9 @@
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.9"
+  },
+  "type": "module"
 }

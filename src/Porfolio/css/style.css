@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'adobe-clean', 'Source Sans Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #242432;
+}
+
+/*  HEADER  */
+.nav-page {
+    width: 100%;
+    height: 2rem;
+
+    font-size: 0.75rem;
+    color: whitesmoke;
+    background-color: #121212;
+    display: flex;
+
+    position: sticky;
+    top: 0;
+}
+
+.nav-page ul {
+    margin: auto;
+    list-style: none;
+}
+
+nav li,
+nav a {
+    margin: auto .5rem;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*  MAIN    */
+/* inicio */
+.inicio {
+    width: 100%;
+    display: grid;
+}
+
+.inicio .portada {
+    width: 100vw;
+    height: 200px;
+
+    overflow: hidden;
+}
+
+.portada img {
+    width: 100%;
+}
+
+.inicio .ficha {
+    margin: 0 1rem;
+
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.ficha .nombre {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    text-align-last: right;
+}
+
+.ficha .actividad {
+    font-size: 0.8rem;
+    text-align-last: right;
+    text-decoration: overline;
+    text-transform: lowercase;
+}
+
+/* tracks*/
+.tracks {
+    padding: 2rem;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+}
+
+audio {
+    width: 50vw;
+    max-width: 600px;
+    min-width: 100%;
+}
+
+
+
+
