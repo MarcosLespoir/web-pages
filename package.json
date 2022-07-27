@@ -4,6 +4,7 @@
   "description": "Repositorio de paginas web",
   "main": "src/index.js",
   "scripts": {
+    "disploy": "gh-pages -d src",
     "tree": "git log --all --graph --decorate --oneline"
   },
   "keywords": [
