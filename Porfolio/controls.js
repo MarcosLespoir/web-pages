@@ -13,10 +13,10 @@ var click = true;
 
 // Funciones
 // play & pause
-const fnConvertTime = (time) =>{
-    const minutes = Math.floor(time/60);
-    const seconds = Math.floor(time%60);
-    if (seconds<10) {
+const fnConvertTime = (time) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    if (seconds < 10) {
         return `${minutes}:0${seconds}`;
     } else {
         return `${minutes}:${seconds}`;
@@ -45,13 +45,18 @@ const fnPlay = () => {
         };
     })
 };
+document.addEventListener('touchstart', (e) => {
+    if(e.path[0].className == "list-song"){
+        audio.src = e.path[0].value;
+    }
+});
 // time bar
 const fnCurrentTime = () => {
     if (play) {
         rangeCurrentTime.addEventListener('mousedown', () => {
             click = false;
         });
-            rangeCurrentTime.style.backgroundSize = `${100 * audio.currentTime / audio.duration}%`;
+        rangeCurrentTime.style.backgroundSize = `${100 * audio.currentTime / audio.duration}%`;
         rangeCurrentTime.addEventListener('mouseup', () => {
             if ((Math.floor(100 * audio.currentTime / audio.duration)) != Math.floor(rangeCurrentTime.style.backgroundSize)) {
                 audio.currentTime = audio.duration * rangeCurrentTime.value / 100;
@@ -77,8 +82,8 @@ const fnVolume = () => {
 
 
 // Timers
-const timerDuration = setInterval(() => {fnDuration()}, 100);
-const timerActualTime = setInterval(() => {fnTime()}, 100);
+const timerDuration = setInterval(() => { fnDuration() }, 100);
+const timerActualTime = setInterval(() => { fnTime() }, 100);
 const timerPlayPause = setInterval(fnPlay(), 100);
 const timerCurrentTime = setInterval(() => { fnCurrentTime(); }, 100);
 const timerVolume = setInterval(() => { fnVolume(); }, 100);
